@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(`<b>1. Write a JavaScript function to check whether an input is an array or not.</b>`);
+        document.write("<br>");
+        function arr(){
+            var arr=[0,9,8,7,6,5,4,3,2,1];
+            document.write(Array.isArray(arr));
+            }arr();
+
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write(`<b>2. Write a JavaScript function to get the first element of an array.</b>`);
+            document.write("<br>");
+            function first(){
+                var arr1=[5,2,9,0,1];
+                document.write(`first element of array is:-`+arr1[0]);
+            }first();
+
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write(`<b>3.Write a JavaScript function to get the last element of an array.</b>`);
+            document.write("<br>");
+            function last(){
+                var arr2=[6,7,8,9,0];
+                document.write(`last element of array is:-`+arr2[arr2.length-1]);
+            }last();
+
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write(`<b>4.Write a simple JavaScript program to join all elements of the following array into a string.</b>`);
+            document.write("<br>");
+            function string(arr3){
+            document.write(arr3.toString()) 
+            }string(['hello','hi','welcome','javascript']);
+
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write(`<b>5.Write a JavaScript program to sort the items of an array.</b>`);
+            document.write("<br>");
+            function sorting(arr4){
+                var a=[10,12,7,3,15,30]
+            document.write(a.sort(function(a,b){
+            return a-b;
+            }))
+            }sorting();
+
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write(`<b>6.Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number.</b>`); 
+            document.write("<br>");       
+            let a=1246897;
+            var b=a.toString();
+            for(i=0;i<b.length;i++){
+               if (b[i]%2==0&& b[i+1]%2==0)
+               {
+                document.write(`${b[i]}-`)
+                } 
+                else{
+                document.write(b[i])
+                }
+            }    
+            document.write("<br>")
+            document.write("<br>")
+
+            document.write(" <b>8.Write a JavaScript program to compute the sum  of an array of integers.</b>")  
+            document.write("<br>")    
+        
+            var sum=0;
+            function sumation(arr8)
+            {
+                for(i=0;i<arr8.length;i++){
+                    sum=sum+arr8[i];
+                }
+            document.write(`sum of the elements of array is: ${sum}`);
+
+            }
+            sumation([1,10,35,69,30])
+            document.write("<br>")
+            document.write("<br>") 
+
+            document.write(" <b>9.Write a JavaScript program to compute the  product of an array of integers.</b>")  
+            document.write("<br>")    
+                var mul=1;
+            function multiplication(arr9)
+            {
+                for(i=0;i<arr9.length;i++){
+                    mul=mul*arr9[i];
+                }
+            document.write(`product of the elements of array is: ${mul}`);
+
+            }
+            multiplication([1,10,3,6,30]);
+            document.write("<br>")
+            document.write("<br>")
+            
+            document.write("<b> 10. Write a JavaScript program to add items to a blank array and display them.</b>")
+            document.write("<br>")
+            const arr10=[];
+            arr10[0]="hello";
+            arr10[1]="hi";
+            arr10[2]="welcome"
+            document.write(arr10);
+    </script>
+</body>
+</html>
